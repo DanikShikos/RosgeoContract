@@ -1,0 +1,39 @@
+﻿@model IEnumerable<RosGeoDevOps.Role>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Список</h2>
+
+<p>
+    @Html.ActionLink("Добавить запись", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Naim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dostup)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dostup)
+        </td>
+        <td>
+            @Html.ActionLink("Изменить", "Edit", new { id=item.ID_Role }) |
+            @Html.ActionLink("Подробнее", "Details", new { id=item.ID_Role }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.ID_Role })
+        </td>
+    </tr>
+}
+
+</table>

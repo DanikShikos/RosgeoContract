@@ -1,0 +1,69 @@
+﻿@model IEnumerable<RosGeoDevOps.Zapro>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Список</h2>
+
+<p>
+    @Html.ActionLink("Добавить запись", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Naim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Opis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateZapr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sotrudnik.Mail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Test.Nom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type_Zapros.Naim)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Opis)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateZapr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sotrudnik.Mail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Test.Nom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type_Zapros.Naim)
+        </td>
+        <td>
+            @Html.ActionLink("Изменить", "Edit", new { id=item.ID_Zapros }) |
+            @Html.ActionLink("Подробнее", "Details", new { id=item.ID_Zapros }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.ID_Zapros })
+        </td>
+    </tr>
+}
+
+</table>

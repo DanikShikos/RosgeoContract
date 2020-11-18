@@ -1,0 +1,80 @@
+﻿@model RosGeoDevOps.Zapro
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Запрос</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateZapr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateZapr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sotrudnik.Fam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sotrudnik.Fam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Test.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Test.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type_Zapros.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type_Zapros.Naim)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" /> |
+            @Html.ActionLink("Назад к списку", "Index")
+        </div>
+    }
+</div>

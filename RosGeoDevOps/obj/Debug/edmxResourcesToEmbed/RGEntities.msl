@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище RosGeoDevOpsModelContainer" CdmEntityContainer="RosGeoDevOpsEntities1">
+    <EntitySetMapping Name="Auths">
+      <EntityTypeMapping TypeName="RosGeoDevOpsModel.Auth">
+        <MappingFragment StoreEntitySet="Auth">
+          <ScalarProperty Name="ID_Auth" ColumnName="ID_Auth" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ID_Sotrudnik" ColumnName="ID_Sotrudnik" />
+          <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mehanizms">
+      <EntityTypeMapping TypeName="RosGeoDevOpsModel.Mehanizm">
+        <MappingFragment StoreEntitySet="Mehanizm">
+          <ScalarProperty Name="ID_Mehanizm" ColumnName="ID_Mehanizm" />
+          <ScalarProperty Name="Naim" ColumnName="Naim" />
+          <ScalarProperty Name="Opis" ColumnName="Opis" />
+          <ScalarProperty Name="ID_Status" ColumnName="ID_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reshenies">
+      <EntityTypeMapping TypeName="RosGeoDevOpsModel.Reshenie">
+        <MappingFragment StoreEntitySet="Reshenie">
+          <ScalarProperty Name="ID_Reshenie" ColumnName="ID_Reshenie" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Opis" ColumnName="Opis" />
+          <ScalarProperty Name="ID_Zapros" ColumnName="ID_Zapros" />
+          <ScalarProperty Name="ID_Sotrudnik" ColumnName="ID_Sotrudnik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="RosGeoDevOpsModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+          <ScalarProperty Name="Naim" ColumnName="Naim" />
+          <ScalarProperty Name="Dostup" ColumnName="Dostup" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotrudniks">
+      <EntityTypeMapping TypeName="RosGeoDevOpsModel.Sotrudnik">
+        <MappingFragment StoreEntitySet="Sotrudnik">
+          <ScalarProperty Name="ID_Sotrudnik" ColumnName="ID_Sotrudnik" />
+          <ScalarProperty Name="Fam" ColumnName="Fam" />
+          <ScalarProperty Name="Im" ColumnName="Im" />
+          <ScalarProperty Name="Otch" ColumnName="Otch" />
+          <ScalarProperty Name="Ser" ColumnName="Ser" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="RosGeoDevOpsModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="ID_Status" ColumnName="ID_Status" />
+          <ScalarProperty Name="Naim" ColumnName="Naim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tests">
+      <EntityTypeMapping TypeName="RosGeoDevOpsModel.Test">
+        <MappingFragment StoreEntitySet="Test">
+          <ScalarProperty Name="ID_Test" ColumnName="ID_Test" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Naim" ColumnName="Naim" />
+          <ScalarProperty Name="Rezult" ColumnName="Rezult" />
+          <ScalarProperty Name="ID_TypeTest" ColumnName="ID_TypeTest" />
+          <ScalarProperty Name="ID_Mehanizm" ColumnName="ID_Mehanizm" />
+          <ScalarProperty Name="DateTest" ColumnName="DateTest" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type_Test">
+      <EntityTypeMapping TypeName="RosGeoDevOpsModel.Type_Test">
+        <MappingFragment StoreEntitySet="Type_Test">
+          <ScalarProperty Name="ID_TypeTest" ColumnName="ID_TypeTest" />
+          <ScalarProperty Name="Naim" ColumnName="Naim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type_Zapros">
+      <EntityTypeMapping TypeName="RosGeoDevOpsModel.Type_Zapros">
+        <MappingFragment StoreEntitySet="Type_Zapros">
+          <ScalarProperty Name="ID_TypeZapros" ColumnName="ID_TypeZapros" />
+          <ScalarProperty Name="Naim" ColumnName="Naim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zaproes">
+      <EntityTypeMapping TypeName="RosGeoDevOpsModel.Zapro">
+        <MappingFragment StoreEntitySet="Zapros">
+          <ScalarProperty Name="ID_Zapros" ColumnName="ID_Zapros" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Naim" ColumnName="Naim" />
+          <ScalarProperty Name="Opis" ColumnName="Opis" />
+          <ScalarProperty Name="ID_Sotrudnik" ColumnName="ID_Sotrudnik" />
+          <ScalarProperty Name="ID_TypeZapros" ColumnName="ID_TypeZapros" />
+          <ScalarProperty Name="DateZapr" ColumnName="DateZapr" />
+          <ScalarProperty Name="ID_Test" ColumnName="ID_Test" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

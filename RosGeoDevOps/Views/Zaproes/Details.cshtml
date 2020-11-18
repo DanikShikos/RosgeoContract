@@ -1,0 +1,74 @@
+﻿@model RosGeoDevOps.Zapro
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Подробности записи</h2>
+
+<div>
+    <h4>Запрос</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateZapr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateZapr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sotrudnik.Fam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sotrudnik.Fam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Test.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Test.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type_Zapros.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type_Zapros.Naim)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.ID_Zapros }) |
+    @Html.ActionLink("Назад к списку", "Index")
+</p>

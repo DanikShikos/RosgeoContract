@@ -1,0 +1,42 @@
+﻿@model RosGeoDevOps.Mehanizm
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Подробности записи</h2>
+
+<div>
+    <h4>Механизм</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status.Naim)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.ID_Mehanizm }) |
+    @Html.ActionLink("Назад к списку", "Index")
+</p>

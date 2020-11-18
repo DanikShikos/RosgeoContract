@@ -1,0 +1,50 @@
+﻿@model RosGeoDevOps.Reshenie
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Подробности записи</h2>
+
+<div>
+    <h4>Решение</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sotrudnik.Fam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sotrudnik.Fam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Zapro.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zapro.Nom)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.ID_Reshenie }) |
+    @Html.ActionLink("Назад к списку", "Index")
+</p>

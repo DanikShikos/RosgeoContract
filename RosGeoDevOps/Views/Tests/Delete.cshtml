@@ -1,0 +1,72 @@
+﻿@model RosGeoDevOps.Test
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Тест</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rezult)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rezult)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTest)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTest)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mehanizm.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mehanizm.Naim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type_Test.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type_Test.Naim)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" /> |
+            @Html.ActionLink("Назад к списку", "Index")
+        </div>
+    }
+</div>

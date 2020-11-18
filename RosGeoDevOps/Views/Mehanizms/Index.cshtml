@@ -1,0 +1,45 @@
+﻿@model IEnumerable<RosGeoDevOps.Mehanizm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Список</h2>
+
+<p>
+    @Html.ActionLink("Добавить запись", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Naim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Opis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status.Naim)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Opis)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status.Naim)
+        </td>
+        <td>
+            @Html.ActionLink("Изменить", "Edit", new { id=item.ID_Mehanizm }) |
+            @Html.ActionLink("Подробнее", "Details", new { id=item.ID_Mehanizm }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.ID_Mehanizm })
+        </td>
+    </tr>
+}
+
+</table>

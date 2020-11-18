@@ -1,0 +1,63 @@
+﻿@model IEnumerable<RosGeoDevOps.Test>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Список</h2>
+
+<p>
+    @Html.ActionLink("Добавить запись", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Naim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rezult)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateTest)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mehanizm.Naim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type_Test.Naim)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rezult)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateTest)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mehanizm.Naim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type_Test.Naim)
+        </td>
+        <td>
+            @Html.ActionLink("Изменить", "Edit", new { id=item.ID_Test }) |
+            @Html.ActionLink("Подробнее", "Details", new { id=item.ID_Test }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.ID_Test })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,50 @@
+﻿@model RosGeoDevOps.Auth
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Подробности записи</h2>
+
+<div>
+   <h4>Данные авторизации</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sotrudnik.Fam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sotrudnik.Fam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role.Naim)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.ID_Auth }) |
+    @Html.ActionLink("Назад к списку", "Index")
+</p>

@@ -1,0 +1,34 @@
+﻿@model RosGeoDevOps.Role
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Подробности записи</h2>
+
+<div>
+    <h4>Роль</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dostup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dostup)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.ID_Role }) |
+    @Html.ActionLink("Назад к списку", "Index")
+</p>

@@ -1,0 +1,66 @@
+﻿@model RosGeoDevOps.Sotrudnik
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Подробности записи</h2>
+
+<div>
+    <h4>Сотрудник</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Im)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Im)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Otch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Otch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mail)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.ID_Sotrudnik }) |
+    @Html.ActionLink("Назад к списку", "Index")
+</p>

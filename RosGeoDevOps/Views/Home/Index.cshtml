@@ -1,0 +1,28 @@
+﻿@model IEnumerable<RosGeoDevOps.Zapro>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>RosGeoDEVOPS</h1>
+    <p class="lead">Главная страница</p>
+</div>
+<div>
+    
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Описание</h2>
+        <p>
+            Программа разработана для упрощения сопровождения программного продукта
+        </p>
+        </div>
+    <div class="col-md-4">
+        <h2>Доступные запросы</h2>
+        <h3>@Html.ActionLink("Перейти к запросам", "Index", "Auths")</h3>
+
+    </div>
+   
+</div>

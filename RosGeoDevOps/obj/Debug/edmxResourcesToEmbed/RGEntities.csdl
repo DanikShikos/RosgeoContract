@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RosGeoDevOpsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Auth">
+    <Key>
+      <PropertyRef Name="ID_Auth" />
+    </Key>
+    <Property Name="ID_Auth" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_Sotrudnik" Type="Int32" />
+    <Property Name="ID_Role" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Sotrudnik" Relationship="Self.R_4" FromRole="Auth" ToRole="Sotrudnik" />
+    <NavigationProperty Name="Role" Relationship="Self.R_5" FromRole="Auth" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="Mehanizm">
+    <Key>
+      <PropertyRef Name="ID_Mehanizm" />
+    </Key>
+    <Property Name="ID_Mehanizm" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Naim" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Opis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_Status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Tests" Relationship="Self.R_12" FromRole="Mehanizm" ToRole="Test" />
+    <NavigationProperty Name="Status" Relationship="Self.R_14" FromRole="Mehanizm" ToRole="Status" />
+  </EntityType>
+  <EntityType Name="Reshenie">
+    <Key>
+      <PropertyRef Name="ID_Reshenie" />
+    </Key>
+    <Property Name="ID_Reshenie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Opis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_Zapros" Type="Int32" Nullable="false" />
+    <Property Name="ID_Sotrudnik" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Sotrudnik" Relationship="Self.R_15" FromRole="Reshenie" ToRole="Sotrudnik" />
+    <NavigationProperty Name="Zapro" Relationship="Self.R_9" FromRole="Reshenie" ToRole="Zapros" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID_Role" />
+    </Key>
+    <Property Name="ID_Role" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Naim" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dostup" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Auths" Relationship="Self.R_5" FromRole="Role" ToRole="Auth" />
+  </EntityType>
+  <EntityType Name="Sotrudnik">
+    <Key>
+      <PropertyRef Name="ID_Sotrudnik" />
+    </Key>
+    <Property Name="ID_Sotrudnik" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fam" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Im" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Otch" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Ser" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nom" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Auths" Relationship="Self.R_4" FromRole="Sotrudnik" ToRole="Auth" />
+    <NavigationProperty Name="Reshenies" Relationship="Self.R_15" FromRole="Sotrudnik" ToRole="Reshenie" />
+    <NavigationProperty Name="Zapros" Relationship="Self.R_6" FromRole="Sotrudnik" ToRole="Zapros" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="ID_Status" />
+    </Key>
+    <Property Name="ID_Status" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Naim" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Mehanizms" Relationship="Self.R_14" FromRole="Status" ToRole="Mehanizm" />
+  </EntityType>
+  <EntityType Name="Test">
+    <Key>
+      <PropertyRef Name="ID_Test" />
+    </Key>
+    <Property Name="ID_Test" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Naim" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Rezult" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ID_TypeTest" Type="Int32" Nullable="false" />
+    <Property Name="ID_Mehanizm" Type="Int32" Nullable="false" />
+    <Property Name="DateTest" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Mehanizm" Relationship="Self.R_12" FromRole="Test" ToRole="Mehanizm" />
+    <NavigationProperty Name="Type_Test" Relationship="Self.R_10" FromRole="Test" ToRole="Type_Test" />
+    <NavigationProperty Name="Zapros" Relationship="Self.R_16" FromRole="Test" ToRole="Zapros" />
+  </EntityType>
+  <EntityType Name="Type_Test">
+    <Key>
+      <PropertyRef Name="ID_TypeTest" />
+    </Key>
+    <Property Name="ID_TypeTest" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Naim" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Tests" Relationship="Self.R_10" FromRole="Type_Test" ToRole="Test" />
+  </EntityType>
+  <EntityType Name="Type_Zapros">
+    <Key>
+      <PropertyRef Name="ID_TypeZapros" />
+    </Key>
+    <Property Name="ID_TypeZapros" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Naim" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Zapros" Relationship="Self.R_7" FromRole="Type_Zapros" ToRole="Zapros" />
+  </EntityType>
+  <EntityType Name="Zapro">
+    <Key>
+      <PropertyRef Name="ID_Zapros" />
+    </Key>
+    <Property Name="ID_Zapros" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Naim" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Opis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Sotrudnik" Type="Int32" Nullable="false" />
+    <Property Name="ID_TypeZapros" Type="Int32" Nullable="false" />
+    <Property Name="DateZapr" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_Test" Type="Int32" />
+    <NavigationProperty Name="Reshenies" Relationship="Self.R_9" FromRole="Zapros" ToRole="Reshenie" />
+    <NavigationProperty Name="Sotrudnik" Relationship="Self.R_6" FromRole="Zapros" ToRole="Sotrudnik" />
+    <NavigationProperty Name="Test" Relationship="Self.R_16" FromRole="Zapros" ToRole="Test" />
+    <NavigationProperty Name="Type_Zapros" Relationship="Self.R_7" FromRole="Zapros" ToRole="Type_Zapros" />
+  </EntityType>
+  <Association Name="R_4">
+    <End Role="Sotrudnik" Type="Self.Sotrudnik" Multiplicity="0..1" />
+    <End Role="Auth" Type="Self.Auth" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrudnik">
+        <PropertyRef Name="ID_Sotrudnik" />
+      </Principal>
+      <Dependent Role="Auth">
+        <PropertyRef Name="ID_Sotrudnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_5">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="Auth" Type="Self.Auth" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID_Role" />
+      </Principal>
+      <Dependent Role="Auth">
+        <PropertyRef Name="ID_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_12">
+    <End Role="Mehanizm" Type="Self.Mehanizm" Multiplicity="1" />
+    <End Role="Test" Type="Self.Test" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mehanizm">
+        <PropertyRef Name="ID_Mehanizm" />
+      </Principal>
+      <Dependent Role="Test">
+        <PropertyRef Name="ID_Mehanizm" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_14">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="Mehanizm" Type="Self.Mehanizm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="ID_Status" />
+      </Principal>
+      <Dependent Role="Mehanizm">
+        <PropertyRef Name="ID_Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_15">
+    <End Role="Sotrudnik" Type="Self.Sotrudnik" Multiplicity="1" />
+    <End Role="Reshenie" Type="Self.Reshenie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrudnik">
+        <PropertyRef Name="ID_Sotrudnik" />
+      </Principal>
+      <Dependent Role="Reshenie">
+        <PropertyRef Name="ID_Sotrudnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_9">
+    <End Role="Zapros" Type="RosGeoDevOpsModel.Zapro" Multiplicity="1" />
+    <End Role="Reshenie" Type="Self.Reshenie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zapros">
+        <PropertyRef Name="ID_Zapros" />
+      </Principal>
+      <Dependent Role="Reshenie">
+        <PropertyRef Name="ID_Zapros" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_6">
+    <End Role="Sotrudnik" Type="Self.Sotrudnik" Multiplicity="1" />
+    <End Role="Zapros" Type="RosGeoDevOpsModel.Zapro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrudnik">
+        <PropertyRef Name="ID_Sotrudnik" />
+      </Principal>
+      <Dependent Role="Zapros">
+        <PropertyRef Name="ID_Sotrudnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_10">
+    <End Role="Type_Test" Type="Self.Type_Test" Multiplicity="1" />
+    <End Role="Test" Type="Self.Test" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type_Test">
+        <PropertyRef Name="ID_TypeTest" />
+      </Principal>
+      <Dependent Role="Test">
+        <PropertyRef Name="ID_TypeTest" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_16">
+    <End Role="Test" Type="Self.Test" Multiplicity="0..1" />
+    <End Role="Zapros" Type="RosGeoDevOpsModel.Zapro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Test">
+        <PropertyRef Name="ID_Test" />
+      </Principal>
+      <Dependent Role="Zapros">
+        <PropertyRef Name="ID_Test" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_7">
+    <End Role="Type_Zapros" Type="Self.Type_Zapros" Multiplicity="1" />
+    <End Role="Zapros" Type="RosGeoDevOpsModel.Zapro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type_Zapros">
+        <PropertyRef Name="ID_TypeZapros" />
+      </Principal>
+      <Dependent Role="Zapros">
+        <PropertyRef Name="ID_TypeZapros" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RosGeoDevOpsEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Auths" EntityType="Self.Auth" />
+    <EntitySet Name="Mehanizms" EntityType="Self.Mehanizm" />
+    <EntitySet Name="Reshenies" EntityType="Self.Reshenie" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="Sotrudniks" EntityType="Self.Sotrudnik" />
+    <EntitySet Name="Status" EntityType="Self.Status" />
+    <EntitySet Name="Tests" EntityType="Self.Test" />
+    <EntitySet Name="Type_Test" EntityType="Self.Type_Test" />
+    <EntitySet Name="Type_Zapros" EntityType="Self.Type_Zapros" />
+    <EntitySet Name="Zaproes" EntityType="RosGeoDevOpsModel.Zapro" />
+    <AssociationSet Name="R_4" Association="Self.R_4">
+      <End Role="Sotrudnik" EntitySet="Sotrudniks" />
+      <End Role="Auth" EntitySet="Auths" />
+    </AssociationSet>
+    <AssociationSet Name="R_5" Association="Self.R_5">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="Auth" EntitySet="Auths" />
+    </AssociationSet>
+    <AssociationSet Name="R_12" Association="Self.R_12">
+      <End Role="Mehanizm" EntitySet="Mehanizms" />
+      <End Role="Test" EntitySet="Tests" />
+    </AssociationSet>
+    <AssociationSet Name="R_14" Association="Self.R_14">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Mehanizm" EntitySet="Mehanizms" />
+    </AssociationSet>
+    <AssociationSet Name="R_15" Association="Self.R_15">
+      <End Role="Sotrudnik" EntitySet="Sotrudniks" />
+      <End Role="Reshenie" EntitySet="Reshenies" />
+    </AssociationSet>
+    <AssociationSet Name="R_9" Association="Self.R_9">
+      <End Role="Zapros" EntitySet="Zaproes" />
+      <End Role="Reshenie" EntitySet="Reshenies" />
+    </AssociationSet>
+    <AssociationSet Name="R_6" Association="Self.R_6">
+      <End Role="Sotrudnik" EntitySet="Sotrudniks" />
+      <End Role="Zapros" EntitySet="Zaproes" />
+    </AssociationSet>
+    <AssociationSet Name="R_10" Association="Self.R_10">
+      <End Role="Type_Test" EntitySet="Type_Test" />
+      <End Role="Test" EntitySet="Tests" />
+    </AssociationSet>
+    <AssociationSet Name="R_16" Association="Self.R_16">
+      <End Role="Test" EntitySet="Tests" />
+      <End Role="Zapros" EntitySet="Zaproes" />
+    </AssociationSet>
+    <AssociationSet Name="R_7" Association="Self.R_7">
+      <End Role="Type_Zapros" EntitySet="Type_Zapros" />
+      <End Role="Zapros" EntitySet="Zaproes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

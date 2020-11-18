@@ -1,0 +1,66 @@
+﻿@model RosGeoDevOps.Test
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Подробности записи</h2>
+
+<div>
+    <h4>Тест</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rezult)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rezult)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTest)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTest)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mehanizm.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mehanizm.Naim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type_Test.Naim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type_Test.Naim)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.ID_Test }) |
+    @Html.ActionLink("Назад к списку", "Index")
+</p>
