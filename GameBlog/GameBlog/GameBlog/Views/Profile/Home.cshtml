@@ -1,0 +1,24 @@
+﻿@model GameBlog.Models.ProfileModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Профиль: @Model.UserName</h2>
+<dl class ="row">
+        <dt class="col-sm-3">Имя пользователя</dt>
+        <dd class="col-sm-9"><em>@Model.UserName</em></dd>
+
+        <dt class="col-sm-3">Почта</dt>
+        <dd class="col-sm-9"><em>@Model.Email</em></dd>
+</dl>
+@foreach (var role in Model.Role)
+{
+    if (role == "Admin")
+    {
+        @Html.ActionLink("Админ панель", "Index", new { area = "Admin",controller = "Home"}, new { @class = "btn btn-dark" })
+    }
+}
+
+@Html.ActionLink("Изменить", "Edit", null, new { @class = "btn btn-dark" })
+
+

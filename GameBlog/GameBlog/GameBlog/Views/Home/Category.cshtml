@@ -1,0 +1,25 @@
+﻿@using GameBlog.Models
+@using GameBlog.Helpers
+@model GameBlog.Models.IndexViewModel<Article>
+
+
+@foreach (var article in Model.Articles.OrderByDescending(t=>t.ArticleId))
+{
+
+    <div class="card" style="width:100%; margin-top:20px">
+        <div class="card-header">
+            <h2>@article.Title</h2><br />
+        </div>
+        <div class="card-body">
+            <p>@article.FullText</p>
+            <strong>@article.Category.Title</strong>
+            <br />
+            <em style="display:block">@article.DatePublication.ToString()</em>
+            @Html.ActionLink("Чиатать далее", "News", new { news = article.ArticleId }, new { @class = "btn btn-link col-12" })
+        </div>
+    </div>
+}
+
+<div class="btn-group">
+    @Html.PageLinks(Model.pageInfo, x => Url.Action("Category", new { page = x }))
+</div>

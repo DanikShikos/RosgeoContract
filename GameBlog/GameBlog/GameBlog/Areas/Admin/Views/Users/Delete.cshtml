@@ -1,0 +1,18 @@
+﻿@model GameBlog.Areas.Admin.Models.UserDeleteViewModel
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Удаление пользователя @Model.UserName</h2>
+<div class="row">
+    <p>Вы точно хотите удалить пользователя с именем @Model.UserName и почтой @Model.Email</p>
+    @using (Html.BeginForm("DeleteConfirm", "Users", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m=>m.Id)
+        <input type="submit" value="Удалить" />
+    }
+</div>
+

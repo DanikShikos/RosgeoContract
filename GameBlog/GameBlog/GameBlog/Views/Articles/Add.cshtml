@@ -1,0 +1,23 @@
+﻿@model GameBlog.Areas.Admin.Models.AddArticleViewModel
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Добавление новой статьи</h2>
+@using (Html.BeginForm("Add","Articles",FormMethod.Post))
+{
+
+    @Html.LabelFor(m => m.Title, "Название статьи")<br/>
+    @Html.EditorFor(m=>m.Title)
+
+
+    @Html.LabelFor(m => m.Fulltext, "Текст статьи")<br />
+    @Html.TextAreaFor(m=>m.Fulltext)
+
+    @Html.LabelFor(m => m.CategoryId, "Категории")<br />
+    @Html.DropDownListFor(m=>m.CategoryId, ViewBag.Category as SelectList)
+
+    <input type="submit" value="Добавить статью" />
+}
+

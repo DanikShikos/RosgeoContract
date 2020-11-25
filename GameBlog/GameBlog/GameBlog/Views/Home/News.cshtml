@@ -1,0 +1,21 @@
+﻿@model GameBlog.Models.Article
+
+@{
+    ViewBag.Title = "News";
+}
+
+<h1>@Model.Title</h1><br />
+<p>@Model.FullText</p><br />
+<div>
+    <div class="float-left text-left">
+        <strong>@Model.Category.Title</strong>
+    </div>
+    <div class="text-right">
+        <em>@Model.DatePublication</em>
+    </div>
+    
+    
+</div>
+<hr>
+<p><b>Автор текста</b>:@Model.ApplicationUser.UserName</p>
+

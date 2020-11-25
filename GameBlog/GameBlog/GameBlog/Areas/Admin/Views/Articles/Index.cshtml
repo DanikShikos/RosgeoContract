@@ -1,0 +1,39 @@
+﻿@model IEnumerable<GameBlog.Areas.Admin.Models.ArticlesListViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+</br>
+<div class="row">
+    <h2 class="col-lg-10">Панель управления статьями</h2>
+    <div class="col-lg-2">
+        @Html.ActionLink("Добавить статью", "Add", null, new { @class = "btn btn-primary" })
+     </div>  
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Update</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var article in Model)
+        {
+            <tr>
+                <th scope="row">@article.Id</th>
+                <td scope="col">@article.Title</td>
+                <td scope="col">
+                    @Html.ActionLink("Delete", "Delete", new { id = @article.Id }, new { @class = "btn btn-primary" })
+                </td>
+                <td scope="col">
+                    @Html.ActionLink("Edit", "Edit", new { id = @article.Id }, new { @class = "btn btn-primary" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

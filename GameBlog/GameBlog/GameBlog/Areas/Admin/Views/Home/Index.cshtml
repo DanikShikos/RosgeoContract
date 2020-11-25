@@ -1,0 +1,21 @@
+﻿@model GameBlog.Areas.Admin.Models.AdminIndexViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="row">
+    <h2>Админ панель</h2>
+</div>
+<dl class="row">
+    <dt class="col-sm-3">Колличество статей</dt>
+    <dd class="col-sm-9">@Model.QuantityArticles</dd>
+
+    <dt class="col-sm-3">Колличество Пользователй</dt>
+    <dd class="col-sm-9">@Model.QuantityUsers</dd>
+</dl>
+
+    @Html.ActionLink("Панель статей","Index","Articles",null,new { @class = "btn btn-primary"})
+    @Html.ActionLink("Панель пользователей","Index","Users",null,new { @class = "btn btn-primary"})
+    @Html.ActionLink("Панель ролей","Index","Roles",null,new { @class = "btn btn-primary"})

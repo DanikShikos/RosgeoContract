@@ -1,0 +1,156 @@
+D:\proj\GameBlog\GameBlog\bin\ApplicationInsights.config
+D:\proj\GameBlog\GameBlog\bin\roslyn\csc.exe
+D:\proj\GameBlog\GameBlog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\proj\GameBlog\GameBlog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\proj\GameBlog\GameBlog\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\proj\GameBlog\GameBlog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\proj\GameBlog\GameBlog\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\proj\GameBlog\GameBlog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\proj\GameBlog\GameBlog\bin\roslyn\System.Collections.Immutable.dll
+D:\proj\GameBlog\GameBlog\bin\roslyn\System.Reflection.Metadata.dll
+D:\proj\GameBlog\GameBlog\bin\roslyn\vbc.exe
+D:\proj\GameBlog\GameBlog\bin\roslyn\VBCSCompiler.exe
+D:\proj\GameBlog\GameBlog\bin\roslyn\VBCSCompiler.exe.config
+D:\proj\GameBlog\GameBlog\bin\GameBlog.dll.config
+D:\proj\GameBlog\GameBlog\bin\GameBlog.dll
+D:\proj\GameBlog\GameBlog\bin\GameBlog.pdb
+D:\proj\GameBlog\GameBlog\bin\EntityFramework.dll
+D:\proj\GameBlog\GameBlog\bin\EntityFramework.SqlServer.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AI.Agent.Intercept.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AI.DependencyCollector.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AI.Web.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AI.WindowsServer.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.ApplicationInsights.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Web.Infrastructure.dll
+D:\proj\GameBlog\GameBlog\bin\System.Web.Helpers.dll
+D:\proj\GameBlog\GameBlog\bin\System.Web.Mvc.dll
+D:\proj\GameBlog\GameBlog\bin\System.Web.Razor.dll
+D:\proj\GameBlog\GameBlog\bin\System.Web.Webpages.Deployment.dll
+D:\proj\GameBlog\GameBlog\bin\System.Web.Webpages.dll
+D:\proj\GameBlog\GameBlog\bin\System.Web.Webpages.Razor.dll
+D:\proj\GameBlog\GameBlog\bin\EntityFramework.xml
+D:\proj\GameBlog\GameBlog\bin\EntityFramework.SqlServer.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AI.DependencyCollector.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AI.Web.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AI.WindowsServer.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.ApplicationInsights.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\proj\GameBlog\GameBlog\bin\System.Web.Razor.xml
+D:\proj\GameBlog\GameBlog\bin\System.Web.Webpages.xml
+D:\proj\GameBlog\GameBlog\bin\System.Web.Webpages.Deployment.xml
+D:\proj\GameBlog\GameBlog\bin\System.Web.Webpages.Razor.xml
+D:\proj\GameBlog\GameBlog\bin\System.Web.Helpers.xml
+D:\proj\GameBlog\GameBlog\bin\System.Web.Mvc.xml
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.csprojResolveAssemblyReference.cache
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.dll
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.pdb
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.MigrateDB.resources
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.csproj.GenerateResource.Cache
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.MigrateDB1.resources
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.Core.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Owin.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Owin.Security.Cookies.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Owin.Security.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Owin.Security.OAuth.dll
+D:\proj\GameBlog\GameBlog\bin\Newtonsoft.Json.dll
+D:\proj\GameBlog\GameBlog\bin\Owin.dll
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.Core.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Owin.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Owin.Security.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Owin.Security.Cookies.xml
+D:\proj\GameBlog\GameBlog\bin\Microsoft.Owin.Security.OAuth.xml
+D:\proj\GameBlog\GameBlog\bin\Newtonsoft.Json.xml
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.NewTables.resources
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.DataMigration.resources
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.UpdateDB.resources
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.UpdateDB1.resources
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.UpdateDB2.resources
+D:\proj\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.UpdateDB3.resources
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\ApplicationInsights.config
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\csc.exe
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\System.Collections.Immutable.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\System.Reflection.Metadata.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\vbc.exe
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\VBCSCompiler.exe
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\roslyn\VBCSCompiler.exe.config
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\GameBlog.dll.config
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\GameBlog.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\GameBlog.pdb
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\EntityFramework.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\EntityFramework.SqlServer.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AI.Agent.Intercept.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AI.DependencyCollector.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AI.Web.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AI.WindowsServer.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.ApplicationInsights.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.Core.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Owin.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Owin.Security.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Owin.Security.OAuth.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Web.Infrastructure.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Newtonsoft.Json.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Owin.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Helpers.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Mvc.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Razor.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Webpages.Deployment.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Webpages.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Webpages.Razor.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\EntityFramework.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\EntityFramework.SqlServer.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AI.DependencyCollector.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AI.Web.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AI.WindowsServer.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.ApplicationInsights.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Owin.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Owin.Security.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Microsoft.Owin.Security.OAuth.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\Newtonsoft.Json.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Razor.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Webpages.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Webpages.Deployment.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Webpages.Razor.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Helpers.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\bin\System.Web.Mvc.xml
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.MigrateDB.resources
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.MigrateDB1.resources
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.NewTables.resources
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.DataMigration.resources
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.UpdateDB.resources
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.UpdateDB1.resources
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.UpdateDB2.resources
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.Migrations.UpdateDB3.resources
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.csproj.GenerateResource.cache
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.csproj.CopyComplete
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.dll
+D:\WAPAGA\Четвертый курс\Практика\ПП 03\Реализация\Приложение\GameBlog-Asp.net-MVC--master\GameBlog\GameBlog\obj\Debug\GameBlog.pdb
