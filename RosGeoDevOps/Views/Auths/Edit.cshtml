@@ -1,7 +1,7 @@
 ﻿@model RosGeoDevOps.Auth
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Изменение";
 }
 
 <h2>Редактирование записи</h2>
@@ -33,7 +33,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ID_Sotrudnik, "ID_Sotrudnik", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.ID_Sotrudnik, "Сотрудник", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("ID_Sotrudnik", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ID_Sotrudnik, "", new { @class = "text-danger" })
@@ -41,7 +41,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ID_Role, "ID_Role", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.ID_Role, "Роль", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("ID_Role", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ID_Role, "", new { @class = "text-danger" })

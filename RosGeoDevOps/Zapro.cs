@@ -28,16 +28,23 @@ namespace RosGeoDevOps
         public string Naim { get; set; }
         [Display(Name = "Описание")]
         public string Opis { get; set; }
+        [Display(Name = "Сотрудник")]
         public int ID_Sotrudnik { get; set; }
+      
+        [Display(Name = "Тип запроса")]
         public int ID_TypeZapros { get; set; }
-        [Display(Name = "Дата подачи запроса")]
+        [Display(Name = "Дата подачи")]
         public string DateZapr { get; set; }
+        [Display(Name = "Тест")]
         public Nullable<int> ID_Test { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reshenie> Reshenies { get; set; }
+       
         public virtual Sotrudnik Sotrudnik { get; set; }
+ 
         public virtual Test Test { get; set; }
+      
         public virtual Type_Zapros Type_Zapros { get; set; }
     }
 }

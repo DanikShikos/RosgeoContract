@@ -1,51 +1,48 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
+    <title>@ViewBag.Title - RosGeoDevOps</title>
+    <link rel="shortcut icon" href="~/Content/Images/logo.ico" type="image/x-icon">
+    @Styles.Render("~/Content/bootstrap.css")
+    @Styles.Render("~/Content/Site.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#AD4D4D">
-        <div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container container-navbar">
             <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <img src="~/Content/logo.png" style="width:40px; height:40px; margin-top:5px" />
+                <img src="~/Content/Images/logo.png" class="logo" />
                 @Html.ActionLink("RosGeoDevOps", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+
+            <ul class="nav navbar-nav">
 
 
-                    <li> @Html.ActionLink("Сотрудники", "Index", "Sotrudniks")</li>
-                    <li>@Html.ActionLink("Данные авторизации", "Index", "Auths")</li>
-                    <li>@Html.ActionLink("Роли", "Index", "Roles")</li>
-                    <li>@Html.ActionLink("Запросы", "Index", "Zaproes")</li>
-                    <li>@Html.ActionLink("Решения", "Index", "Reshenies")</li>
-                    <li>@Html.ActionLink("Тесты", "Index", "Tests")</li>
-                    <li>@Html.ActionLink("Механизмы", "Index", "Mehanizms")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+                <li> @Html.ActionLink("Сотрудники", "Index", "Sotrudniks")</li>
+                <li>@Html.ActionLink("Данные авторизации", "Index", "Auths")</li>
+                <li>@Html.ActionLink("Роли", "Index", "Roles")</li>
+                <li>@Html.ActionLink("Запросы", "Index", "Zaproes")</li>
+                <li>@Html.ActionLink("Решения", "Index", "Reshenies")</li>
+                <li>@Html.ActionLink("Тесты", "Index", "Tests")</li>
+                <li>@Html.ActionLink("Механизмы", "Index", "Mehanizms")</li>
+            </ul>
+            @Html.Partial("_LoginPartial")
+
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer style="position:absolute; bottom:20px">
+        <footer>
             <p>&copy; @DateTime.Now.Year - Все права защищены</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/main.js")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

@@ -1,10 +1,10 @@
 ﻿@model RosGeoDevOps.Mehanizm
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Создание";
 }
 
-<h2>Create</h2>
+<h2>Создание записи</h2>
 
 @using (Html.BeginForm()) 
 {
@@ -31,7 +31,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ID_Status, "ID_Status", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.ID_Status, "Статус", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("ID_Status", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ID_Status, "", new { @class = "text-danger" })

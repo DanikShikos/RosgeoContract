@@ -4,7 +4,7 @@
     ViewBag.Title = "Login";
 }
 
-<h2>Login</h2>
+<h2>Вход</h2>
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -13,7 +13,7 @@
         @Html.ValidationSummary()
         <input type="hidden" name="returnUrl" value="@ViewBag.returnUrl" />
         <p>
-            <label>UserName</label><br />
+            <label>Имя пользователя</label><br />
             @Html.EditorFor(x => x.UserName)
         </p>
         <p>

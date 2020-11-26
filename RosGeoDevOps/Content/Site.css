@@ -1,4 +1,6 @@
-﻿body {
+﻿
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -26,3 +28,127 @@ textarea {
 .navbar {
     background-color: #AD4D4D;
 }
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px
+}
+
+footer {
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+}
+
+footer>p{
+    margin-bottom:0px;
+
+}
+
+.navbar-nav {
+    display: inline-block;
+    height: 100%;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-left:3px;
+    padding-right:3px;
+    height: 40px;
+    height: 100%;
+}
+
+.navbar-nav > li > a {
+    color: floralwhite;
+    display: inline-block;
+}
+
+.navbar-header > a {
+    color: floralwhite;
+    display: inline-block;
+    vertical-align: middle;
+    align-self: center;
+}
+.navbar-nav > li > a:hover, .navbar-header > a:hover {
+    text-decoration: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    background-color: #6B0A0A;
+    border-radius:10px;
+}
+
+a.actionImg {
+    text-decoration: none;
+}
+
+td.actionImgs {
+    display: inline-block;
+    width: 120px;
+    background-color: #AD4D4D;
+    border-radius: 15px;
+    margin-bottom:2px;
+}
+
+.bi {
+    box-sizing: content-box;
+    height: 25px;
+    margin: 2px;
+    width: 25px;
+}
+
+.bi:hover {
+    margin: 2px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    height: 27px;
+    width: 27px;
+}
+
+.container>p {
+    justify-content:flex-end;
+    display: flex;
+    margin: 10px;
+    padding-right:35px;
+}
+
+p > a {
+    text-decoration: none;
+    right:0px;
+    padding: 10px;
+    margin:5px;
+    color: floralwhite;
+    background-color: #AD4D4D;
+    border-radius:5px;
+}
+
+p > a:hover {
+    text-decoration: none;
+    background-color: #6B0A0A;
+    color:white;
+}
+
+.btn-default {
+    text-decoration: none;
+    right: 0px;
+    padding: 10px;
+    margin: 5px;
+    color: floralwhite;
+    background-color: #AD4D4D;
+    border-radius: 5px;
+}
+
+.btn-default {
+    text-decoration: none;
+    background-color: #6B0A0A;
+    color: white;
+}
+
+h2{
+    margin:10px;
+    margin-left:-20px;
+}
+
